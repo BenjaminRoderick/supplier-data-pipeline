@@ -72,6 +72,10 @@ Please be advised that the datasets utilized in this project are synthetically g
         * **How has the number of new parts entries from this supplier changed over time (on a monthly basis)?**: Here, I considered a "new parts entry" to be any entry in the `supplier_feed` table, as considering only the first time each part_id appears yields a very ininteresting result (each part_id appears at least once in the first 2 months of the dataset). Consequently, to produce the results, I simply converted the `entry_date` column from yyyy-mm-dd format to yyyy-mm format, grouped by date to count the number of entries then sorted in ascending order.
 
     * For the visualization element, I decided to use the results from the *average cost per category* and *new parts entries over time* tasks. I chose *average cost per category* as my first visualization because, upon seeing the results of the analysis, I noticed that all of the average price values were rather similar, but not identical. Consequently, a bar plot is a great tool to understand the price distribution, as the differences in heights facilitates a quick understanding of the data in a way that is not possible by simply looking at the numbers and calculating percentage differences. As for *new parts entries over time*, this was the first analysis I thought of visualizing upon reading this project's instructions because it is utterly impossible to properly identify long term trends in data just by looking at numbers.
+  
+![alt text](https://github.com/BenjaminRoderick/supplier-data-pipeline/blob/main/data/avg_cost_price_by_category.png "Average Cost Price by Category")
+
+![alt text](https://github.com/BenjaminRoderick/supplier-data-pipeline/blob/main/data/new_parts_added_each_month.png "New Entries Added Each Month")
 
 ### Database Schema
 ```
