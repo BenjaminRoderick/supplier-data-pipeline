@@ -1,0 +1,6 @@
+venv/
+.virtual_documents/
+anaconda_projects/
+.ipynb_checkpoints/
+
+*.db
